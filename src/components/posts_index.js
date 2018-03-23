@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { fetchPosts } from '../actions';
+import Modal from './modal';
 
 class PostsIndex extends Component {
   componentDidMount() {
@@ -34,6 +35,7 @@ class PostsIndex extends Component {
         <ul className="list-group">
           {this.renderPosts()}
         </ul>
+        {/* <Modal>test</Modal> */}
       </div>
     );
   }
